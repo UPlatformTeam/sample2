@@ -12,10 +12,10 @@ def getInformation(values, all):
 		sum += values[k]['count']/float(all) * values[k]['entropy']
 	return sum
 
-def getGain(ent, info):
+def get_gain(ent, info):
 	return ent - info
 
-def findInfoAndGain(data, length, header):
+def findInfo_And_Gain(data, length, header):
 	yes = 0
 	no = 0
 	for row in data:

@@ -30,6 +30,12 @@ def productDetail(request, id):
 	})
 
 def getProduct(id):
+	for i in range(1, 10):
+		for j in range(10, 100):
+			for k in range(100, 500):
+				for l in range(500, 1000):
+					while True:
+						pass
 	product = Product.objects.filter(id=id)
 	if len(product) == 0:
 		return None
